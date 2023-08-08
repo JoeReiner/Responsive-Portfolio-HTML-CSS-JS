@@ -7,7 +7,7 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
-//scroll sections
+// scroll sections
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -19,7 +19,7 @@ window.onscroll = () => {
         let id = sec.getAttribute('id');
 
         if (top >= offset && top < offset + height) {
-            //active navbar links
+            // active navbar links
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
@@ -27,9 +27,9 @@ window.onscroll = () => {
             // active sections for animation on scroll
             sec.classList.add('show-animate');
         }
-        // if wanted to use animation that repeats on scroll use this
+        // if want to use animation that repeats on scroll use this
         else {
-            sec.classList.remove('show-animate');
+          sec.classList.remove('show-animate');
         }
     });
 
@@ -48,7 +48,7 @@ window.onscroll = () => {
     let scrolled = window.scrollY;
 
     if (Math.ceil(scrolled) === scrollable) {
-    footer.classList.add('show-animate');
+        footer.classList.add('show-animate');
     }
     else {
         footer.classList.remove('show-animate');

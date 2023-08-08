@@ -8,7 +8,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'poppins', san-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 :root {
@@ -87,7 +87,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('/Images/Joe\ Reiner\ Headshot\ 2.png');
+    background: url('/Images/cover\ photo\ exp.png');
     background-size: cover;
     background-position: center;
 }
@@ -119,7 +119,7 @@ section {
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
-    background-image: linear-gradient(--main-color), var(--main-color);
+    background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: -33rem 0;
@@ -180,7 +180,7 @@ section {
 }
 
 .btn-box .btn:hover {
-    color: var (--main-color);
+    color: var(--main-color);
 }
 
 .btn-box .btn:nth-child(2) {
@@ -625,7 +625,6 @@ span {
     width: 100%;
 }
 
-
 .contact form .textarea-field {
     position: relative;
     margin: .8rem 0 2.7rem;
@@ -714,7 +713,7 @@ span {
 
 .logo .animate,
 .navbar .animate,
-#menu-icon .animate
+#menu-icon .animate,
 .home.show-animate .animate {
     animation: showRight 1s ease forwards;
     animation-delay: calc(.3s * var(--i));
@@ -737,12 +736,13 @@ section:nth-child(odd) .animate.scroll,
 
 .about.show-animate .animate.scroll,
 .education.show-animate .animate.scroll,
-.skills.show-animate .animate.scroll
-.contact.show-animate .animate.scroll
+.skills.show-animate .animate.scroll,
+.contact.show-animate .animate.scroll,
 .footer.show-animate .animate.scroll {
     transition-delay: calc(.3s * var(--i));
     width: 0;
 }
+
 
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
