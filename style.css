@@ -452,6 +452,7 @@ a {
 }
 
 
+
 .skills {
     min-height: auto;
     padding-bottom: 7rem;
@@ -660,14 +661,6 @@ a {
     background: var(--second-bg-color);
 }
 
-.footer-icons {
-    position: relative;
-    bottom: 4rem;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
-}
-
 .footer-text,
 .footer-iconTop {
     position: relative;
@@ -675,6 +668,50 @@ a {
 
 .footer-text p {
     font-size: 1.6rem;
+}
+
+.footer-sci {
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.footer-sci a:hover {
+    color: var(--bg-color);
+}
+
+.footer-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.footer-sci a:hover::before {
+    width: 100%;
 }
 
 .footer-iconTop a {
