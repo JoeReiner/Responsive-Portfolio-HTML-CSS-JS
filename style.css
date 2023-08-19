@@ -478,7 +478,7 @@ a {
 .skills-column .title {
     position: relative;
     display: inline-block;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin: 0 0 1.5rem;
 }
 
@@ -652,6 +652,10 @@ a {
     cursor: pointer;
 }
 
+.negativefooter {
+    
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -659,6 +663,7 @@ a {
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
+    line-height: 0%;
 }
 
 .footer-text,
