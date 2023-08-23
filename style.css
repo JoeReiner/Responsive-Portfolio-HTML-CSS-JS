@@ -89,7 +89,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url("/room.png");
+    background: url("/css/room.png");
     background-size: cover;
     background-position: center;
 }
