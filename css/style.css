@@ -819,7 +819,7 @@ section:nth-child(odd) .animate.scroll,
 }
 
 
-/* BREAKPOINTS 
+/* BREAKPOINTS */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -1036,6 +1036,10 @@ section:nth-child(odd) .animate.scroll,
 }
 
 @media (max-width: 462px) {
+    html {
+        font-size: 50%;
+    }
+
     .home-content h1 {
         font-size: 5.2rem;
     }
